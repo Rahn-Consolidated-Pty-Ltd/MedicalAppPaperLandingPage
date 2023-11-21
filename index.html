@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/RahnMedicalApp.png">
   <link rel="icon" type="image/png" href="./assets/img/RahnMedicalApp.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
@@ -13,9 +13,24 @@
     name='viewport' />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <meta name="description"
+    content="Rahn Medical Application is a cutting-edge Diagnostic Tool designed to revolutionize the medical field. This powerful South African Medical AI Application is meticulously crafted to enhance productivity, save valuable time, ensure accuracy in diagnosis, and ultimately boost earnings for medical professionals. With its advanced capabilities, Rahn Medical Application aims to be your trusted partner in delivering exceptional patient care and medical precision.">
+  <meta name="keywords"
+    content="Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App, Rahn Medical Application, Rahn Medical App, Rahn Medical, Rahn Medical AI, Rahn Medical AI Application, Rahn Medical AI App">
+  <meta name="author" content="Rahn Consolidated (Pty) Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="English">
+  <meta name="generator" content="Rahn Consolidated (Pty) Ltd">
+  <meta name="publisher" content="Rahn Consolidated (Pty) Ltd">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="url" content="https://medicalapp.rahn.co.za">
+  <meta name="identifier-URL" content="https://medicalapp.rahn.co.za">
+  <meta name="coverage" content="Worldwide">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -553,13 +568,12 @@
                           <h5 class="card-title">Built-in Database</h5>
                           <p class="card-text">Rahn Medical Application comes with authentication and database via
                             <!-- underline font -->
-                            <a href="https://www.prisma.io/" target="_blank" style="color: black; text-decoration: underline;">
+                            <a href="https://www.prisma.io/" target="_blank"
+                              style="color: black; text-decoration: underline;">
                               Prisma
                             </a>
                             supported by many databases.
                           </p>
-
-
                         </div>
                       </div>
                     </div>
@@ -570,18 +584,20 @@
                         <img src="/assets/img/doctorSocialMedia.webp" alt="Hematology Analysis" class="card-img-top">
                         <div class="card-body">
                           <h5 class="card-title">Doctor Social Media</h5>
-                          <p class="card-text">Using the internal social media platform, doctors can share their knowledge and learn from each other.</p>
+                          <p class="card-text">Using the internal social media platform, doctors can share their
+                            knowledge and learn from each other.</p>
                         </div>
                       </div>
                     </div>
 
-                     <!-- Card 2 -->
-                     <div class="col-md-4">
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
                       <div class="card mb-4 shadow-sm">
                         <img src="/assets/img/security.webp" alt="Hematology Analysis" class="card-img-top">
                         <div class="card-body">
                           <h5 class="card-title">Storage and Security</h5>
-                          <p class="card-text">We use Azure and Microsoft Cloud Storage to store your data. We can capture any data blob you want and store it securely.</p>
+                          <p class="card-text">We use Azure and Microsoft Cloud Storage to store your data. We can
+                            capture any data blob you want and store it securely.</p>
                         </div>
                       </div>
                     </div>
@@ -590,6 +606,76 @@
 
                   </div>
                 </div>
+
+                <h1 id="AIDemo" class="text-center">AI Demo</h1>
+
+                <div class="container mt-5">
+                  <div class="card bg-dark text-white">
+                    <div class="card-header">
+                      <span class="badge bg-danger"> </span>
+                      <span class="badge bg-warning"> </span>
+                      <span class="badge bg-success"> </span>
+                      MediCodeX - zsh
+                    </div>
+                    <pre class="card-body" id="ai-content"
+                      style="overflow: auto;  font-size: 15px; color: white; font-family: monospace; font-weight: bold;">
+
+                    </pre>
+                  </div>
+                </div>
+
+                <br>
+                <br>
+
+                <script>
+                  const aiContent = document.getElementById('ai-content');
+
+                  const output = `
+USE PROMPT full blood test analysis [patientID=3] [fileID=3] [intakeForm=3] 
+
+The blood test analysis report describes different parameters and their readings. 
+It appears that most of the patient's blood test results seem within the normal reference range. Let me summarize the major findings for you: 
+1) Electrolytes: 
+  - Sodium: 139 mmol/L (Reference Range: 136-145 mmol/L) 
+  - Potassium: 4.4 mmol/L (Reference Range: 3.5-5.1 mmol/L) 
+  - Chloride: 108 mmol/L (Reference Range: 98-108 mmol/L) 
+  - Bicarbonate: 19.0 mmol/L (Reference Range: 22.0-28.0 mmol/L). 
+This is slightly lower than the normal range which could suggest that the patient's blood is slightly more acidic than normal. 
+  - Anion Gap: 12 mmol/L (Reference Range: 3-15 mmol/L) 
+2) Urea and Creatinine (Kidney function tests): 
+  - Urea: 3.8 mmol/L (Reference Range: 2.1-7.1 mmol/L) 
+  - Creatinine: 64 umol/L (Reference Range: 50-98 umol/L) 
+  - eGFR: 107 (>=90 is considered normal) 
+3) Liver Functions: 
+  - Total Protein: 69 g/L (Reference Range: 64-83 g/L) 
+  - Albumin: 42 g/L (Reference Range: 35-52 g/L) 
+  - Total Bilirubin: 5 umol/L (<=22 umol/L is normal) 
+  - Conjugated Bilirubin: 2 umol/L (<=9 umol/L is normal) 
+  - ALP: 86 IU/L (Reference Range: 42-98 IU/L) 
+  - Gamma GT: 30 IU/L (<=33 IU/L is normal) 
+  - ALT: 24 IU/L (<=36 IU/L is normal) 
+  - AST: 16 IU/L (<=36 IU/L is normal) 
+4) Endocrinology: 
+  - Thyroid results are normal, suggesting euthyroidism 
+  - TSH: 2.09 mIU/L (Reference Range: 0.35 - 4.94) 
+
+Other than this, there are no signs of lipemia, icterus, or haemolysis in the sample, 
+which in turn means that the sample was clear of fat particles, jaundice, or haemolysis respectively. 
+Remember, these results should always be interpreted in context of the patient's symptoms and clinical picture.`
+
+                  // chatgpt like streaming effect 
+                  const outputArray = output.split(' ');
+                  let i = 0;
+                  const interval = setInterval(() => {
+                    if (i < outputArray.length) {
+                      aiContent.innerHTML += `${outputArray[i]} `;
+                      i++;
+                    } else {
+                      clearInterval(interval);
+                    }
+                  }, 50);
+
+                </script>
 
 
               </div>
