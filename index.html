@@ -76,47 +76,63 @@
 
     </nav>
     <!-- End Navbar -->
-    <div class="content ">
-      <div class="row  justify-content-center">
+    <div class="content" style=" user-select: none; ">
+      <div class="row  justify-content-center background-div">
         <div class="col-lg-11 col-md-11 col-sm-12">
-
-          <div class="d-flex justify-content-center">
-            <span class="text-gradient text-primary ">Introducing Rahn Medical App</span>
+          <style>
+            .background-div {
+              background-image: url('./assets/img/RahnMedicalBackground.png');
+              /* make sure it doesn't repeat */
+              background-repeat: no-repeat;
+              /* put it on the top center */
+              background-position: top center;
+              /* rounded corners */
+              border-radius: 50px;
+              padding: 20px
+                /* Add some padding to the content inside the div */
+            }
+          </style>
+          <div>
+            <div class="d-flex justify-content-center">
+              <span class="text-gradient text-primary ">Introducing Rahn Medical App</span>
+            </div>
+            <h1 class="text-center">AI Medical App</h1>
+            <div class="d-flex justify-content-center" style="cursor: pointer;">
+              <img src="./assets/img/RahnMedicalApp.png" alt="Rahn" style="width: 400px; height: 400px;"
+                onclick="document.location.href='https://rahn.co.za/'">
+            </div>
+            </h1>
+            <div class="d-flex justify-content-center ">
+              <p class="text-center col-lg-6 col-md-8 sm-12">
+                Cutting-edge Diagnostic Tool designed to revolutionize the medical
+                field. This powerful South African Medical AI Application is meticulously crafted to enhance
+                productivity,
+                save valuable time, ensure accuracy in diagnosis, and ultimately boost earnings for medical
+                professionals.
+                With its advanced capabilities, Rahn Medical App aims to be your trusted partner in delivering
+                exceptional
+                patient care and medical precision.
+              </p>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+              <button class=" btn btn-dark btn-round" data-cal-link="rahnconsolidated/30min"
+                data-cal-config='{"layout":"month_view"}'>Book a demo today</button>
+              <button class=" btn btn-dark btn-round"
+                onclick="document.location.href='https://medicalapp.rahn.co.za'">Login
+                to your account</button>
+            </div>
+            <br>
+            <br>
           </div>
-          <h1 class="text-center">AI Medical App</h1>
-          <div class="d-flex justify-content-center" style="cursor: pointer;">
-            <img src="./assets/img/RahnMedicalApp.png" alt="Rahn" style="width: 400px; height: 400px;"
-              onclick="document.location.href='https://familychiro.co.za/'">
-          </div>
-          </h1>
-          <div class="d-flex justify-content-center ">
-            <p class="text-center col-lg-6 col-md-8 sm-12">
-              Cutting-edge Diagnostic Tool designed to revolutionize the medical
-              field. This powerful South African Medical AI Application is meticulously crafted to enhance
-              productivity,
-              save valuable time, ensure accuracy in diagnosis, and ultimately boost earnings for medical
-              professionals.
-              With its advanced capabilities, Rahn Medical App aims to be your trusted partner in delivering
-              exceptional
-              patient care and medical precision.
-            </p>
-          </div>
-          <br>
-          <div class="d-flex justify-content-center">
-            <button class=" btn btn-dark btn-round" data-cal-link="rahnconsolidated/30min"
-              data-cal-config='{"layout":"month_view"}'>Book a demo today</button>
-            <button class=" btn btn-dark btn-round"
-              onclick="document.location.href='https://medicalapp.rahn.co.za'">Login
-              to your account</button>
-          </div>
-          <br>
-          <br>
           <div class="card">
             <div class="row  justify-content-center">
               <div class="row justify-content-center" id="partners">
                 <div class="col-md-12">
                   <br><br>
-                  <h1 class="text-center">Our Key Features</h1>
+                  <div class="card-body">
+                    <h1 class="text-center">Our Key Features</h1>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-11 col-md-11 col-sm-12"><br><br>
@@ -382,7 +398,8 @@
                             <div class="card mb-4 shadow-sm">
                               <img src="/assets/img/code.webp" alt="models" class="card-img-top">
                               <div class="card-body">
-                                <h6 class="card-title font-weight-bold">Build custom Medical AI Models and use it in the app</h6>
+                                <h6 class="card-title font-weight-bold">Build custom Medical AI Models and use it in the
+                                  app</h6>
                                 <p class="card-text">With the power of custom GPT-4 models, the app can help you
                                   diagnose
                                   your
